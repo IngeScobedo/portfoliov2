@@ -1,4 +1,3 @@
-import '../../index.css'
 import personalImage from '../../images/alanescobedo.jpg'
 
 const Header = () => {
@@ -56,11 +55,11 @@ const Header = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center">
-          <div className="flex flex-col items-center ">
+        <div className="flex flex-col items-center justify-center bg-indigo-600 rounded-3xl ">
             <img
-              className="mb-3 w-72 h-72 rounded-3xl shadow-lg border p-1"
+              className="mb-3 w-72 h-72 rounded-3xl shadow-lg border p-1 rotate-[10deg]"
               src={personalImage}
-              alt="Bonnie image"
+              alt="Alan Escobedo Picture"
             />
           </div>
         </div>

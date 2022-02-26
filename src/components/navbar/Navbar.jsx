@@ -4,7 +4,7 @@ import { BiMessageSquareDetail } from 'react-icons/bi'
 
 const Navbar = () => {
   return (
-    <div className="fixed bottom-0 mb-5 w-full flex justify-center">
+    <div className="fixed bottom-0 mb-5 w-full flex justify-center z-10">
       <nav className='h-14 w-min  bg-gray-700 rounded-3xl flex items-center' >
       <a
        href="#home"
