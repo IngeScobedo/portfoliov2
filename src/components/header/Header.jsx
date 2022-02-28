@@ -1,11 +1,16 @@
-import personalImage from '../../images/alanescobedo.jpg'
+import Picture from './picture'
 
 const Header = () => {
   return (
-    <header id="home" className="w-full flex justify-center p-10 mt-2 text-center">
+    <header
+      id="home"
+      className="w-full flex justify-center p-10 mt-2 text-center"
+    >
       <div className="flex flex-col items-center bg-opacity-96 backdrop-opacity-90 backdrop-invert p-6 rounded-3xl md:flex-row lg:w-5/6 lg:justify-around">
-        <div className="hidden ml-2 absolute left-0 lg:flex lg:flex-col " >
-            <div className="w-10 h-15 border-t-8 border-red-500 flex justify-center px-2.5 py-2.5 text-center items-center m-3 text-3xl text-gray-600 p-2" >|</div>
+        <div className="hidden ml-2 absolute left-0 lg:flex lg:flex-col ">
+          <div className="w-10 h-15 border-t-8 border-red-500 flex justify-center px-2.5 py-2.5 text-center items-center m-3 text-3xl text-gray-600 p-2">
+            |
+          </div>
           <button
             type="button"
             className="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-2.5 py-2.5 text-center inline-flex items-center justify-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 m-2"
@@ -30,11 +35,16 @@ const Header = () => {
             type="button"
             className="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-2.5 py-2.5 text-center inline-flex items-center justify-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 m-2"
           >
-           <img src="https://img.icons8.com/stickers/100/000000/gmail-new.png" className="w-4 h-4"/>
+            <img
+              src="https://img.icons8.com/stickers/100/000000/gmail-new.png"
+              className="w-4 h-4"
+            />
           </button>
-          <div className="w-10 h-15 border-t-8 border-red-500 flex justify-center px-2.5 py-2.5 text-center items-center m-3 text-3xl text-gray-600 p-2" >|</div>
+          <div className="w-10 h-15 border-t-8 border-red-500 flex justify-center px-2.5 py-2.5 text-center items-center m-3 text-3xl text-gray-600 p-2">
+            |
+          </div>
         </div>
-        <div className="lg:ml-10" >
+        <div className="lg:ml-10">
           <h2 className="text-2xl text-gray-500">Hola yo soy</h2>
           <h1 className="text-5xl font-bold m-1 text-gray-700">
             Alan Escobedo
@@ -54,15 +64,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center">
-        <div className="flex flex-col items-center justify-center bg-indigo-600 rounded-3xl ">
-            <img
-              className="mb-3 w-72 h-72 rounded-3xl shadow-lg border p-1 rotate-[10deg]"
-              src={personalImage}
-              alt="Alan Escobedo Picture"
-            />
-          </div>
-        </div>
+        <Picture mb={3} w={72} h={72} />
       </div>
     </header>
   )
