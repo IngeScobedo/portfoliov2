@@ -3,12 +3,6 @@ import { useForm } from 'react-hook-form'
 import emailjs, { init } from '@emailjs/browser'
 init(import.meta.env.VITE_USER_ID)
 
-console.log(
-  import.meta.env.VITE_SERVICE_KEY,
-  import.meta.env.VITE_TEMPLATE_ID,
-  import.meta.env.VITE_USER_ID
-)
-
 const FormContact = () => {
   const {
     register,
