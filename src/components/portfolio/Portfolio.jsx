@@ -1,6 +1,8 @@
 import ProyectCard from './ProyectCard'
 import proyectImage from '../../images/social-dashboard-project.jpg'
 import apiGif from '../../images/api.gif'
+import nodeGif from '../../images/nodejs.gif'
+import giphy from '../../images/giphy.png'
 
 const Portfolio = () => {
   return (
@@ -18,6 +20,7 @@ const Portfolio = () => {
           image={proyectImage}
           name="Social Media Dashboard"
           description="Desafio de la plataforma FrontendMentor"
+          repo="https://ingescobedo.github.io/frontend-mentor-social-media-dashboard/"
         >
           <span className="bg-orange-100 text-orange-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-orange-200 dark:text-orange-900">
             HTML
@@ -34,6 +37,7 @@ const Portfolio = () => {
           image={apiGif}
           name="API Rest"
           description="Una API Rest para una aplicación de notas, autenticación y autorización y manejo de datos"
+          repo="https://github.com/IngeScobedo/LearningMongoDB"
         >
           <span className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-900">
             NodeJS
@@ -49,15 +53,28 @@ const Portfolio = () => {
           </span>
         </ProyectCard>
         <ProyectCard
-          image={proyectImage}
-          name="Social Media Dashboard"
-          description="Desafio de la plataforma FrontendMentor"
-        />
+          image={nodeGif}
+          name="Aplicacion de consola para consultas de clima"
+          description="Esta aplicacion consulta el clima dado el nombre de una ciudad, ademas tiene un historial de busquedas"
+          repo="https://github.com/IngeScobedo/clima-app-node"
+        >
+          <span className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-900">
+            NodeJS
+          </span>
+          <span className="bg-gray-100 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
+            yargs.js
+          </span>
+        </ProyectCard>
         <ProyectCard
-          image={proyectImage}
-          name="Social Media Dashboard"
-          description="Desafio de la plataforma FrontendMentor"
-        />
+          image={giphy}
+          name="GifApp"
+          description="Aplicacion para buscar Gifs, usando la api de Giphy Y React"
+          repo="https://github.com/IngeScobedo/gif-app-node"
+        >
+          <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">
+            React
+          </span>
+        </ProyectCard>
       </div>
     </section>
   )
