@@ -1,6 +1,5 @@
 // import personalImage from '../../images/alanescobedo.jpg'
 const imgUrl = new URL('../../images/alanescobedo.jpg', import.meta.url).href
-document.getElementById('personal-image').src = imgUrl
 const Picture = ({ mb, w, h }) => {
   return (
     <div className="flex flex-col justify-center items-center">
