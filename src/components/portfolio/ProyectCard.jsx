@@ -1,10 +1,11 @@
-const ProyectCard = ({ children, image, name, description }) => {
+const ProyectCard = ({ children, image, name, description, repo }) => {
   return (
     <div className="w-full flex justify-center min-h-48 " rel="noreferrer">
       <a
-        href="https://github.com/"
+        href={`${repo}`}
         target="_blank"
-        className="rounded-2xl bg-slate-400 max-w-xs relative" rel="noreferrer"
+        className="rounded-2xl bg-slate-400 max-w-xs relative"
+        rel="noreferrer"
       >
         <img src={image} className="rounded-t-2xl w-full h-48" />
         <div
