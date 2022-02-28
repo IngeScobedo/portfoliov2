@@ -9,10 +9,10 @@ const ProyectCard = ({ children, image, name, description }) => {
         <img src={image} className="rounded-t-2xl w-full h-48" />
         <div
           id="proyect-card"
-          className="text-transparent w-full h-48 p-4 absolute top-0 text-black hover:block hover:bg-gray-500 hover:bg-opacity-80 flex justify-center items-center hover:text-white hover:text-center hover:p-24 rounded-t-2xl"
+          className="text-transparent w-full h-48 p-4 absolute top-0 hover:block hover:bg-gray-500 hover:bg-opacity-80 flex justify-center items-center hover:text-white hover:text-center hover:px-32 hover:py-20 rounded-t-2xl"
         >
           <p
-            className="w-12 h-18 rounded-lg border border-blue-400 bg-transparent text-center hover:text-blue-500 cursor-pointer"
+            className="h-18 rounded-lg border border-blue-400 bg-transparent text-center hover:text-blue-500 cursor-pointer hover:"
             rel="noreferrer"
           >
             Ver demo
