@@ -1,7 +1,7 @@
 import { AiOutlineBook, AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
 import { RiServiceLine } from 'react-icons/ri'
 import { BiMessageSquareDetail } from 'react-icons/bi'
-
+import { BsFillFolderFill } from 'react-icons/bs'
 const NavLink = ({ refTo, iconName }) => {
   return (
     <a
@@ -28,7 +28,11 @@ const NavLink = ({ refTo, iconName }) => {
                 ? (
         <BiMessageSquareDetail />
                   )
-                : null}
+                : iconName === 'BsFillFolderFill'
+                  ? (
+        <BsFillFolderFill />
+                    )
+                  : null}
     </a>
   )
 }

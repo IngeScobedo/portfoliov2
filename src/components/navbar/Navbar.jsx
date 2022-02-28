@@ -7,6 +7,7 @@ const Navbar = () => {
         <NavLink refTo="home" iconName="AiOutlineHome" />{' '}
         <NavLink refTo="about" iconName="AiOutlineUser" />{' '}
         <NavLink refTo="experience" iconName="AiOutlineBook" />{' '}
+        <NavLink refTo="portfolio" iconName="BsFillFolderFill" />{' '}
         <NavLink refTo="contact" iconName="BiMessageSquareDetail" />{' '}
       </nav>
     </div>

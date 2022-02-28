@@ -1,4 +1,4 @@
-import Picture from './picture'
+import Picture from './Picture'
 
 const Header = () => {
   return (
@@ -6,8 +6,8 @@ const Header = () => {
       id="home"
       className="w-full flex justify-center p-10 mt-2 text-center"
     >
-      <div className="flex flex-col items-center bg-opacity-96 backdrop-opacity-90 backdrop-invert p-6 rounded-3xl md:flex-row lg:w-5/6 lg:justify-around">
-        <div className="hidden ml-2 absolute left-0 lg:flex lg:flex-col ">
+      <div className="flex flex-col items-center bg-opacity-96 backdrop-opacity-90 backdrop-invert p-6 rounded-3xl md:flex-row md:justify-around lg:w-5/6 lg:justify-around">
+        <div className="hidden ml-2 absolute left-0 lg:flex sm:flex-col ">
           <div className="w-10 h-15 border-t-8 border-red-500 flex justify-center px-2.5 py-2.5 text-center items-center m-3 text-3xl text-gray-600 p-2">
             |
           </div>
@@ -64,7 +64,9 @@ const Header = () => {
           </div>
         </div>
 
-        <Picture mb={3} w={72} h={72} />
+        <div className="w-4/6 xs:w-1/2 md:w-2/6" >
+          <Picture mb={3} w={24} h={28} />
+        </div>
       </div>
     </header>
   )

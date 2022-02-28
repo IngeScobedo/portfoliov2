@@ -1,4 +1,4 @@
-import Picture from '../header/picture'
+import Picture from '../header/Picture'
 import Card from './Card'
 
 const About = () => {
