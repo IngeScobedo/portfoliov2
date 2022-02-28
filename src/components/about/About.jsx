@@ -1,8 +1,5 @@
-import personalImage from '../../images/aboutmepicture.jpg'
-import { FaAward } from 'react-icons/fa'
-import { BsFolder2Open } from 'react-icons/bs'
-import { GiProgression } from 'react-icons/gi'
-import { AiOutlineTeam } from 'react-icons/ai'
+import Picture from '../header/picture'
+import Card from './Card'
 
 const About = () => {
   return (
@@ -15,49 +12,32 @@ const About = () => {
           Sobre mi
         </h1>
 
-        <div className="h-56 w-56 flex items-center justify-center bg-indigo-600 rounded-3xl  xs:col-span-2 xs:row-span-2 xs:w-full xs:h-full">
-          <img
-            className="h-56 w-56 rounded-3xl shadow-lg border -rotate-[12deg] lg:w-5/6 lg:h-5/6"
-            src={personalImage}
-            alt="Alan Escobedo Picture"
-          />
-        </div>
-        <div className="h-56 w-56 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center flex flex-col items-center justify-center">
-          <h5 className="mb-4 text-5xl font-bold tracking-tight dark:text-white">
-            <FaAward />
-          </h5>
-          <p className="font-normal text-gray-900 dark:text-gray-400 mb-4">
-            1 Año de experiencia desarrollando paginas web con Javascript
-          </p>
-        </div>
-        <div className="h-56 w-56 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center flex flex-col items-center justify-center">
-          <h5 className="mb-4 text-5xl font-bold tracking-tight dark:text-white">
-            <BsFolder2Open />
-          </h5>
-          <p className="font-normal text-gray-900 dark:text-gray-400 mb-4">
-            10+ Proyectos terminados usando las tecnologias mas modernas y
-            aplicando buenas practicas
-          </p>
-        </div>
-        <div className="h-56 w-56 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center flex flex-col items-center justify-center">
-          <h5 className="mb-4 text-5xl font-bold tracking-tight dark:text-white">
-            <GiProgression />
-          </h5>
-          <p className="font-normal text-gray-900 dark:text-gray-400 mb-4">
-            En continuo aprendizaje y desarrollo de nuevas tecnologias,
-            metodologias y herramientas
-          </p>
-        </div>
-        <div className="h-56 w-56 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center flex flex-col items-center justify-center">
-          <h5 className="mb-4 text-5xl font-bold tracking-tight dark:text-white">
-            <AiOutlineTeam />
-          </h5>
-          <p className="font-normal text-gray-900 dark:text-gray-400 mb-4">
-            Trabajo en equipo, escucha activa y comunicación clara
-          </p>
-        </div>
-      </div>
+        <Picture
+          className="xs:col-span-2 xs:row-span-2 xs:w-full xs:h-full"
+          mb={0}
+          w={56}
+          h={56}
+        />
 
+        <Card
+          description="1 Año de experiencia desarrollando paginas web con Javascript"
+          iconType="FaAward"
+        />
+        <Card
+          description="10+ Proyectos terminados usando las tecnologias mas modernas y
+            aplicando buenas practicas"
+          iconType="BsFolder2Open"
+        />
+        <Card
+          description="En continuo aprendizaje y desarrollo de nuevas tecnologias,
+          metodologias y herramientas"
+          iconType="GiProgression"
+        />
+        <Card
+          description="Trabajo en equipo, escucha activa y comunicación clara"
+          iconType="AiOutlineTeam"
+        />
+      </div>
     </section>
   )
 }
