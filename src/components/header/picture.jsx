@@ -1,5 +1,5 @@
-import personalImage from '../../images/alanescobedo.jpg'
-document.getElementById('personal-image').src = personalImage
+// import personalImage from '../../images/alanescobedo.jpg'
+const imgUrl = new URL('../../images/alanescobedo.jpg', import.meta.url).href
 
 const Picture = ({ mb, w, h }) => {
   return (
@@ -8,7 +8,7 @@ const Picture = ({ mb, w, h }) => {
         <img
           id="personal-image"
           className={`mb-${mb} w-${w} h-${h} rounded-3xl shadow-lg border p-1 rotate-[10deg]`}
-          src={personalImage}
+          src={imgUrl}
           alt="Alan Escobedo Picture"
         />
       </div>
