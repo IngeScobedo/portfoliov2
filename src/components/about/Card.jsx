@@ -5,7 +5,7 @@ import { FaAward } from 'react-icons/fa'
 
 const Card = ({ description, iconType }) => {
   return (
-    <div className="h-56 w-56 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center flex flex-col items-center justify-center">
+    <div className="h-56 w-56 p-6 max-w-sm bg-gray-800 rounded-lg border border-gray-700 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center flex flex-col items-center justify-center">
       <h5 className="mb-4 text-5xl font-bold tracking-tight dark:text-white">
         {iconType === 'FaAward'
           ? (

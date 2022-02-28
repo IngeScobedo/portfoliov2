@@ -11,14 +11,12 @@ const ProyectCard = ({ children, image, name, description }) => {
           id="proyect-card"
           className="text-transparent w-full h-48 p-4 absolute top-0 text-black hover:block hover:bg-gray-500 hover:bg-opacity-80 flex justify-center items-center hover:text-white hover:text-center hover:p-24 rounded-t-2xl"
         >
-          <a
-            href="https://github.com/"
-            target="_blank"
+          <p
             className="w-12 h-18 rounded-lg border border-blue-400 bg-transparent text-center hover:text-blue-500 cursor-pointer"
             rel="noreferrer"
           >
             Ver demo
-          </a>
+          </p>
         </div>
         <div className="min-h-36 p-4">
           <h1 className="m-0 pb-2 text-gray-900 font-bold text-2xl">{name}</h1>
