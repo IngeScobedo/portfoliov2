@@ -1,5 +1,6 @@
 import Picture from './Picture'
 import pdf from '../../images/CurriculumAlanEscobedo.pdf'
+const imgUrl = new URL('../../images/alanescobedo.jpg', import.meta.url).href
 
 const Header = () => {
   return (
@@ -76,7 +77,7 @@ const Header = () => {
         </div>
 
         <div className="w-4/6 xs:w-1/2 md:w-2/6">
-          <Picture mb={3} w={24} h={28} />
+          <Picture mb={3} w={24} h={28} img={imgUrl} />
         </div>
       </div>
     </header>

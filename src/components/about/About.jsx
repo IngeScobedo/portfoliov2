@@ -1,5 +1,6 @@
 import Picture from '../header/Picture'
 import Card from './Card'
+const imgUrl = new URL('../../images/aboutmepicture.jpg', import.meta.url).href
 
 const About = () => {
   return (
@@ -17,6 +18,7 @@ const About = () => {
           mb={0}
           w={56}
           h={56}
+          img={imgUrl}
         />
 
         <Card
